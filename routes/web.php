@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EmailsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TestEnrollmentController;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -32,3 +33,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //     return new WelcomeMail();
 // });
 Route::get('/email', [EmailsController::class, 'email']);
+Route::get('/send-testenrollment',[TestEnrollmentController::class, 'sendTestNotification']);
