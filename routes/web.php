@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmailsController;
 use App\Http\Controllers\HomeController;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Auth;
@@ -26,7 +27,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Route for mailing
-Route::get('/email', function(){
-    Mail::to('yuneshshrestha24@gmail.com')->send(new WelcomeMail);
-    return new WelcomeMail();
-});
+// Route::get('/email', function(){
+//     Mail::to('yuneshshrestha24@gmail.com')->send(new WelcomeMail);
+//     return new WelcomeMail();
+// });
+Route::get('/email', [EmailsController::class, 'email']);
