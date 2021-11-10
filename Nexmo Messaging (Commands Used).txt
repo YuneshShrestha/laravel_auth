@@ -1,0 +1,5 @@
+1)composer require laravel/nexmo-notification-channel nexmo/laravel
+2)Create Account
+3)To create nexmo config file
+  php artisan vendor:publish
+4)https://github.com/Nexmo/nexmo-laravel

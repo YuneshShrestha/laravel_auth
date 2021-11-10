@@ -9,9 +9,15 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.65",
+        "laravel/nexmo-notification-channel": "^2.5",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.3"
+        "laravel/ui": "^3.3",
+        "nexmo/laravel": "^2.4",
+        "nyholm/psr7": "^1.4",
+        "php-http/httplug": "^2.2",
+        "php-http/message-factory": "^1.0",
+        "symfony/http-client": "^5.3"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
