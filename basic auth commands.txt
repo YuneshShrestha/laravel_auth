@@ -1,0 +1,6 @@
+(Install node js)
+1. composer require laravel/ui (Installs ui package)
+2. php artisan ui vue --auth(Which ui you want to install for login)
+3. npm install ; npm run dev (For mac instead of ; use &&)
+4. run the asked command
+5. again run npm install ; npm run dev for mix
